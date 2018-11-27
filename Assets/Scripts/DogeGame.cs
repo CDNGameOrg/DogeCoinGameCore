@@ -17,7 +17,7 @@ public class DogeGame : MonoBehaviour {
         for (int i = 0; i < numBaskets; i++)
         {
             GameObject dogeCatcherGO = Instantiate<GameObject>(dogeCatchPrefab);
-            Vector3 pos = Vector3.zero;
+            Vector3 pos = Vector3.zero + new Vector3(0,0,5);
             pos.y = basketBottomY + (basketSpacingY * i);
             dogeCatcherGO.transform.position = pos;
             dogeCatchList.Add(dogeCatcherGO);
